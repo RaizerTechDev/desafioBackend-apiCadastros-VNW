@@ -21,10 +21,15 @@ Projeto desenvolvido como desafio do curso **VNW (Vai Na Web)** com orientação
 
 ---
 
-## **🎥 Demonstração**
+<!--
+# 🎥 Demonstração
 
-![Demo da API]
-(./assets/img/apicadastros.gif)
+![Demo da API](./assets/img/apicadastros.gif)
+
+<br>
+
+---
+-->
 
 <br>
 
@@ -107,9 +112,13 @@ express.json()
 
 <br>
 
+
+<!--
+
 ## **📚 Documentação da API**
 
 **🔗 [Clique aqui para Documentação no Postman!!]("/")*
+-->
 
 
 <br>
