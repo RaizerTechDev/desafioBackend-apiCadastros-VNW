@@ -109,7 +109,8 @@ express.json()
 
 ## **📚 Documentação da API**
 
-https://documenter.getpostman.com/view/19569624/2sBXcLec9Y
+**🔗 [Clique aqui para Documentação no Postman!!]("/")*
+
 
 <br>
 
