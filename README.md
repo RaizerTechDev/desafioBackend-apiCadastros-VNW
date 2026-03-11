@@ -28,12 +28,11 @@ Projeto desenvolvido como desafio do curso **VNW (Vai Na Web)** com orientação
 
 <br>
 
+
 ---
+
 -->
 
-<br>
-
----
 
 ## **📖 Sobre o Projeto**
 
@@ -118,10 +117,10 @@ express.json()
 ## **📚 Documentação da API**
 
 **🔗 [Clique aqui para Documentação no Postman!!]("/")*
--->
 
 
 <br>
+-->
 
 ## **🚀 Endpoints da API**
 
