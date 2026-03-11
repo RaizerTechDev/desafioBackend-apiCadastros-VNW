@@ -1,190 +1,280 @@
-🩺 API Cadastro de Médicos e Dentistas Voluntários
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=180&section=header&text=API%20Voluntários%20da%20Saúde&fontSize=35&fontColor=ffffff&animation=fadeIn"/> </p> <p align="center">
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=180&section=header&text=API%20Voluntários%20da%20Saúde&fontSize=35&fontColor=ffffff&animation=fadeIn)
 
 
+# 🩺 API de Cadastro de Médicos e Dentistas Voluntários
+
+![Node](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-Framework-000000?logo=express)
+![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman)
+![Vercel](https://img.shields.io/badge/Vercel-Serverless-000000?logo=vercel)
 
 
+☁️ Deploy da API
 
+**🔗 [Clique aqui e conheça a API-Cadastro Voluntários!!](https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros)**
 
+API Backend desenvolvida com **Node.js** e **Express** para demonstrar a criação de um sistema de **cadastro de profissionais da saúde voluntários**, como **Médicos e Dentistas**, interessados em participar de **ações sociais**.
 
+Projeto desenvolvido como desafio do curso **VNW (Vai Na Web)** com orientação dos mestres **Jeferson Santos** e **Vinicius Bispo**.
 
+<br>
 
+---
 
-</p>
-📖 Sobre o Projeto
+## **🎥 Demonstração**
 
-Esta aplicação consiste em uma API REST desenvolvida com Node.js e Express para registrar Médicos e Dentistas voluntários interessados em participar de ações sociais de saúde.
+![Demo da API]
+(./assets/img/apicadastros.gif)
 
-O sistema simula um pequeno banco de dados utilizando armazenamento em memória, permitindo cadastrar e listar profissionais voluntários.
+<br>
 
-Projeto desenvolvido como desafio do curso VNW (Vai Na Web) com orientação dos mentores Jeferson Santos e Vinicius Bispo.
+---
 
-🎯 Objetivo do Projeto
+## **📖 Sobre o Projeto**
 
-Criar uma API funcional consolidando conceitos importantes de backend.
+Esta aplicação consiste em uma **API REST** responsável por registrar profissionais voluntários que desejam colaborar em projetos sociais de saúde**.
 
-Ao concluir este projeto é possível:
+A API permite:
 
-✔ Criar APIs com Node.js e Express
-✔ Trabalhar com rotas HTTP
-✔ Utilizar GET e POST
-✔ Criar middlewares de validação
-✔ Validar dados enviados pelo cliente
-✔ Entender o fluxo cliente → servidor → resposta
-✔ Testar endpoints com Postman
+- cadastrar profissionais voluntários
+- listar profissionais cadastrados
 
-Simulando o trabalho de um desenvolvedor backend.
+Os dados são armazenados em **memória utilizando um array**, simulando um banco de dados simples.
 
-📌 Requisitos do Desafio
-Rotas
+Cada cadastro possui os seguintes atributos:
 
-Criar rotas organizadas para:
+| Campo | Descrição |
+|------|------|
+| id | identificador único |
+| nome | nome do profissional |
+| email | email de contato |
+| telefone | telefone com 10 ou 11 números |
+| mensagem | mensagem opcional |
 
-listar profissionais voluntários
+<br>
 
-cadastrar novos profissionais
+---
 
-Verbos HTTP
-Método	Função
-GET	listar profissionais cadastrados
-POST	cadastrar novo profissional
-Middleware
+## **🎯 Objetivo do Projeto**
 
-Utilização do middleware:
+Criar uma API funcional utilizando **Node.js e Express** para consolidar conceitos de backend.
 
+Ao concluir o projeto é possível:
+
+- Criar APIs com **Node.js**
+- Organizar rotas com **Express**
+- Utilizar **GET e POST**
+- Criar **middlewares de validação**
+- Validar dados enviados pelo cliente
+- Entender o fluxo **cliente → servidor → resposta**
+- Testar endpoints com **Postman**
+
+<br>
+
+---
+
+## **📌 Requisitos do Desafio**
+
+### Rotas
+
+- Listar profissionais
+- Cadastrar profissionais voluntários
+
+### Verbos HTTP
+
+| Método | Função |
+|------|------|
+| GET | listar profissionais cadastrados |
+| POST | cadastrar novo profissional |
+
+### Middleware
+
+```javascript
 express.json()
+```
 
-Para permitir o envio de dados em JSON.
+<br>
 
-Validação de Dados
-Campo	Regra
-Nome	mínimo 3 caracteres
-Email	formato válido
-Telefone	10 ou 11 números
-Mensagem	máximo 500 caracteres
-Armazenamento
+## **🧰 Tecnologias Utilizadas**
 
-Utilização de um array em memória para simular banco de dados.
+| Tecnologias| Descrição |
+|------|------|
+| Node.js | execução JS |
+| Express.js | framework para APIs |
+| Postman | testes de endpoints |
+| Vercel | deploy serverless |
+| Nodemon | reload automático no                  desenvolvimento |  
 
-Testes
+<br>
 
-Todos os endpoints foram testados utilizando o Postman.
+## **📚 Documentação da API**
 
-🎥 Demonstração
-<div align="center"> <img src="https://media.giphy.com/media/3zSF3Gnr7cxMbi6WoP/giphy.gif" height="50"/> <img height="420px" src="./assets/img/apicadastros.gif"/> </div>
-🧰 Tecnologias Utilizadas
-Tecnologia	Função
-Node.js	Ambiente de execução JavaScript
-Express.js	Framework para criação da API
-Postman	Testes de endpoints
-Vercel	Deploy serverless
-Nodemon	Reload automático no desenvolvimento
-Dotenv	Gerenciamento de variáveis de ambiente
-🏗️ Arquitetura da API
+https://documenter.getpostman.com/view/19569624/2sBXcLec9Y
+
+<br>
+
+## **🚀 Endpoints da API**
+
+### - **GET /cadastros: Listar profissionais**
+
+🔗 Testar API:
+
+GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros
+
+<br>
+
+### - **POST /cadastros: Criar cadastro**
+
+
+```bash
+
+Body JSON:
+
+{
+  "nome": "Rafael Raizer",
+  "email": "rafa@email.com",
+  "telefone": "47999999999",
+  "mensagem": "Quero ajudar em ações sociais"
+}
+```
+
+<br>
+
+```bash
+📌 Exemplo de Resposta da API
+{
+  "mensagem": "Cadastro enviado com sucesso!",
+  "cadastro": {
+    "id": 1,
+    "nome": "Rafael Raizer",
+    "email": "rafa@email.com",
+    "telefone": "47999999999",
+    "mensagem": "Quero ajudar em ações sociais"
+  }
+}
+```
+
+<br>
+
+# **📌 Status HTTP Utilizados**
+
+* **200** → Sucesso
+* **201** → Recurso criado
+* **400** → Recurso não encontrado
+
+<br>
+
+## **🧠 Lógica Utilizada na API**
+
+Alguns métodos de JavaScript foram utilizados para manipular os dados do array que simula o banco de dados.
+
+| Código | O que faz |
+|------|------|
+| `push()` | adicionar item |
+| `find()` | busca um item |
+| `p.id == id` | mantém apenas o item correspondente ao ID |
+
+### Esses métodos permitem buscar, atualizar e remover produtos dentro da aplicação.
+
+
+## **🏗️ Arquitetura da API**
+
+```bash
 Cliente (Postman / Frontend)
         │
-                ▼
-                Servidor Express (server.js)
-                        │
-                                ▼
-                                Middleware de Validação
-                                        │
-                                                ▼
-                                                Rotas (/cadastros)
-                                                        │
-                                                                ▼
-                                                                Array em memória (cadastros[])
-                                                                🚀 Endpoints da API
-                                                                Listar profissionais
-                                                                GET /cadastros
+        ▼
+Express Server (server.js)
+        │
+        ▼
+Middleware de Validação
+        │
+        ▼
+Rotas (/cadastros)
+        │
+        ▼
+Array em memória (cadastros[])
+```
 
-                                                                Exemplo:
+<br>
 
-                                                                https://desafio-medicos-dentistas-solidario.vercel.app/cadastros
-                                                                Criar cadastro
-                                                                POST /cadastros
+## **📂 Estrutura do Projeto**
 
-                                                                Body JSON:
+```
+api-cadastro-voluntarios
+│
+├── api
+│   └── index.js
+│
+├── assets
+│   └── img
+│       └── apicadastros.gif
+│
+├── server.js
+├── package.json
+├── vercel.json
+├── .env
+├── .gitignore
+│
+└── README.md
+```
 
-                                                                {
-                                                                 "nome": "Rafael Raizer",
-                                                                  "email": "rafa@email.com",
-                                                                   "telefone": "47999999999",
-                                                                    "mensagem": "Quero ajudar em ações sociais"
-                                                                    }
-                                                                    📌 Exemplo de Resposta
-                                                                    {
-                                                                     "mensagem": "Cadastro enviado com sucesso!",
-                                                                      "cadastro": {
-                                                                         "id": 1,
-                                                                            "nome": "Rafael Raizer",
-                                                                               "email": "rafa@email.com",
-                                                                                  "telefone": "47999999999",
-                                                                                     "mensagem": "Quero ajudar em ações sociais"
-                                                                                      }
-                                                                                      }
-                                                                                      ☁️ Deploy da API
+<br>
 
-                                                                                      A API foi publicada utilizando Serverless Functions da Vercel.
+## **⚙️ Como Executar o Projeto**
 
-                                                                                      Testar endpoint:
+### ***1️⃣ Clonar o repositório***
 
-                                                                                      👉
-                                                                                      https://desafio-medicos-dentistas-solidario.vercel.app/cadastros
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+ou 
 
-                                                                                      📚 Documentação da API
+### ***📂 Criar pasta***
 
-                                                                                      Documentação completa no Postman:
+```bash
+npm init -y
+```
+---
 
-                                                                                      https://documenter.getpostman.com/view/19569624/2sBXcLec9Y
+### ***2️⃣ Instalar dependências***
 
-                                                                                      📂 Estrutura do Projeto
-                                                                                      api-cadastro-voluntarios
-                                                                                      │
-                                                                                      ├── api
-                                                                                      │   └── index.js
-                                                                                      │
-                                                                                      ├── assets
-                                                                                      │   └── img
-                                                                                      │       └── apicadastros.gif
-                                                                                      │
-                                                                                      ├── server.js
-                                                                                      ├── package.json
-                                                                                      ├── vercel.json
-                                                                                      ├── .env
-                                                                                      ├── .gitignore
-                                                                                      │
-                                                                                      └── README.md
-                                                                                      ⚙️ Como Executar o Projeto
-                                                                                      Clonar repositório
-                                                                                      git clone https://github.com/seu-usuario/seu-repositorio.git
-                                                                                      Instalar dependências
-                                                                                      npm install
-                                                                                      Criar arquivo .env
-                                                                                      PORT=3000
-                                                                                      Rodar servidor
+```bash
+npm install express
+npm install nodemon --save-dev
+npm install dotenv   
+```
 
-                                                                                      Modo desenvolvimento:
+---
 
-                                                                                      npm run dev
+### ***3️⃣ Executar o servidor na porta (localhost:3000)***
 
-                                                                                      ou
+```bash
+npm run dev
+```
 
-                                                                                      node server.js
+ou
 
-                                                                                      Servidor rodando em:
+```bash
+node server.js
+```
 
-                                                                                      http://localhost:3000
-                                                                                      👨‍💻 Autor
-                                                                                      <table> <tr> <td align="center"> <img src="https://avatars.githubusercontent.com/u/87991807?v=4" width="80"/> </td> <td>
-                                                                                      RafaRaizer-Dev
+---
 
-                                                                                      📱 https://api.whatsapp.com/send/?phone=47999327137
 
-                                                                                      💼 https://www.linkedin.com/in/raizer-rafael/
+<br>
 
-                                                                                      🐱 https://github.com/RaizerTechDev
+## **👨‍💻 Autor**
 
-                                                                                      🌐 https://raizertechdev-portfolio.netlify.app/
+Projeto desenvolvido para prática de **CRUD com API REST usando Express e Vercel**.
 
-                                                                                      </td> </tr> </table>
+<table>
+<tr>
+  <td align="center">
+    <img src="https://avatars.githubusercontent.com/u/87991807?v=4" width="80" />
+  </td>
+  <td>
+    **RafaRaizer-Dev** <br>
+    <a href="https://api.whatsapp.com/send/?phone=47999327137">📱 WhatsApp</a> | 
+    <a href="https://www.linkedin.com/in/raizer-rafael/">💼 LinkedIn</a> | 
+    <a href="https://github.com/RaizerTechDev">🐱 GitHub</a> | 
+    <a href="https://raizertechdev-portfolio.netlify.app/">🌐 Portfólio</a>
