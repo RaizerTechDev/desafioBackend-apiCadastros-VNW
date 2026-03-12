@@ -134,9 +134,7 @@ GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros
 
 <br>
 
-### 🔎 GET /cadastros/{id} — Buscar profissional por ID
-
-Retorna um profissional específico com base no **id** informado.
+### - **GET /cadastros/{id} — Buscar profissional por ID específico**
 
 ⚠️ Observação  
 Esta API utiliza **armazenamento em memória**, portanto os dados não são persistidos.
