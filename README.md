@@ -1,4 +1,4 @@
-![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=180&section=header&text=API%20Voluntários%20da%20Saúde&fontSize=35&fontColor=ffffff&animation=fadeIn)
+8![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=180&section=header&text=API%20Voluntários%20da%20Saúde&fontSize=35&fontColor=ffffff&animation=fadeIn)
 
 
 # 🩺 API de Cadastro de Médicos e Dentistas Voluntários
@@ -125,19 +125,27 @@ express.json()
 
 ## **🚀 Endpoints da API**
 
-### - **GET /cadastros: Listar profissionais**
+### - **GET /cadastros ou por {id}: Listar profissionais**
 
 🔗 Testar API:
 
 GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros
 
+
 <br>
 
-### - **GET /cadastros/{id}: Listar profissionais por ***id*****
+### 🔎 GET /cadastros/{id} — Buscar profissional por ID
 
-🔗 Testar API:
+Retorna um profissional específico com base no **id** informado.
+
+⚠️ Observação  
+Esta API utiliza **armazenamento em memória**, portanto os dados não são persistidos.
+Após reiniciar a função ou realizar novo deploy, os cadastros podem ser resetados.
+
+🔗 Exemplo de requisição
 
 GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros/1
+
 
 <br>
 
