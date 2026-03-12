@@ -69,8 +69,26 @@ function emailValido(email) {
                                                                                         res.json(cadastros);
                                                                                         });
 
-                                                                                        app.post("/cadastros", validarCadastro, (req, res) => {
-                                                                                          const { nome, email, telefone, mensagem } = req.body;
+app.get("/cadastros/:id", (req, res) => {
+
+  const id = Number(req.params.id);
+
+  const cadastro = cadastros.find(p => p.id === id);
+
+  if (!cadastro) {
+    return res.status(404).json({
+      erro: "Cadastro não encontrado"
+    });
+  }
+
+  res.status(200).json(cadastro);
+
+});
+
+
+
+                                                                                            app.post("/cadastros", validarCadastro, (req, res) => {
+                                                                                                 const { nome, email, telefone, mensagem } = req.body;
 
                                                                                             const novoCadastro = {
                                                                                                 id: proximoId++,
