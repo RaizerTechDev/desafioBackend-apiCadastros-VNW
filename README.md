@@ -125,12 +125,11 @@ express.json()
 
 ## **🚀 Endpoints da API**
 
-### - **GET /cadastros ou por {id}: Listar profissionais**
+### - **GET /cadastros: Listar profissionais**
 
 🔗 Testar API:
 
 GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros
-
 
 <br>
 
@@ -143,7 +142,6 @@ Após reiniciar a função ou realizar novo deploy, os cadastros podem ser reset
 🔗 Exemplo de requisição
 
 GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros/1
-
 
 <br>
 
