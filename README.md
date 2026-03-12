@@ -81,14 +81,15 @@ Ao concluir o projeto é possível:
 
 ### Rotas
 
-- Listar profissionais
+- Listar profissionais e por ***id***
 - Cadastrar profissionais voluntários
 
 ### Verbos HTTP
 
 | Método | Função |
 |------|------|
-| GET | listar profissionais cadastrados |
+| GET | listar profissionais.    cadastrados |
+| GET{id}| listar profissionais cadastrados por ***id*** |
 | POST | cadastrar novo profissional |
 
 ### Middleware
@@ -132,6 +133,14 @@ GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros
 
 <br>
 
+### - **GET /cadastros/{id}: Listar profissionais por ***id*****
+
+🔗 Testar API:
+
+GET https://desafio-medicos-dentistas-solidario-api.vercel.app/cadastros/1
+
+<br>
+
 ### - **POST /cadastros: Criar cadastro**
 
 
@@ -169,7 +178,7 @@ Body JSON:
 
 * **200** → Sucesso
 * **201** → Recurso criado
-* **400** → Recurso não encontrado
+* **404** → Recurso não encontrado
 
 <br>
 
